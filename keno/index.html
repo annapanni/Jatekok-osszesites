@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keno</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="tables-texts, columnContainer">
+        <table class="select-table" id="table1"></table>
+        <table class="select-table" id="table2"></table>
+        <p id="selected-info">0 kiválsztva<br>
+          Jegy ára: 0 HUF</p>
+      </div>
+      <p class="current-balance"></p>
+      <div class="odds-div, columnContainer">
+        <table id="odds-table">
+          <tr>
+            <th>Találatok</th>
+            <th>Nyeremény</th>
+            <th>Esélyek</th>
+          </tr>
+        </table>
+        <button type="button" name="done" id="doneBtn">Kész</button>
+      </div>
+    </div>
+    <div id="eredmeny-div" class="columnContainer">
+      <p class="eredmenyJelzo">Nem volt még húzás!</p>
+    </div>
+    <script type="text/javascript" src = "script.js"></script>
+  </body>
+</html>

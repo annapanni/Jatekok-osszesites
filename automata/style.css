@@ -1,0 +1,51 @@
+div{
+  margin: 30px;
+}
+.rowcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.columncountainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-div{
+  position: relative;
+  overflow: hidden;
+  width: 230px;
+  height: 230px;
+}
+
+@keyframes scroll-out{
+  from{transform: translateY(0%);}
+  to{transform: translateY(-100%);}
+}
+@keyframes scroll-in{
+  from{transform: translateY(100%);}
+  to{transform: translateY(0%);}
+}
+.scrolling-out{animation-name: scroll-out}
+.scrolling-in{animation-name: scroll-in}
+
+.a-image{
+  position:absolute;
+  width: 200px;
+  padding: 15px;
+}
+
+.finalImg{
+  border: 10px ridge rgba(10, 250, 20, .6);
+  padding: 5px;
+}
+
+.startBtn{
+  border: 2px outset #00C65C;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: inherit;
+}

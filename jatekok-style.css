@@ -1,0 +1,19 @@
+body{
+  background-color: #008075;
+}
+
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+button{
+  font-size: 30px;
+  color: #004a44;
+  background-color: #38ffdb;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 40px;
+}

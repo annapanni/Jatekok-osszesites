@@ -1,0 +1,81 @@
+td{
+  border: 1px solid #002f7d;
+  text-align: center;
+}
+p{
+  color: #002f7d;
+  font-size: 30px;
+  text-align: center;
+}
+.hidden {display: none;}
+.maincontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.columnContainer{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
+}
+.select-table {
+  border: 2px solid #002f7d;
+  margin-top: 10px
+}
+
+.select-table td {
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.number {
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+img {
+  width: 50px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left:0
+}
+.select-table td:hover {background-color: lightgreen;}
+
+#selected-info{
+  width: 80%;
+  margin-top: 15px;
+}
+
+#odds-table th{
+  color: #002f7d;
+  border-bottom: 2px solid #002f7d;
+  border-top: 2px solid #002f7d;
+  padding: 10px;
+  font-size: 20px
+}
+#odds-table td{
+  font-size: 20px;
+  width: 110px
+}
+
+.valid-odd{
+  background-color: #80b0ff;
+}
+
+#doneBtn{
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid #002f7d;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#eredmeny-div{
+  width: 50%;
+  margin: auto;
+}

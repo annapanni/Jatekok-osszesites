@@ -1,0 +1,94 @@
+*{font-family: 'American Typewriter', serif;}
+body{width: 100%;}
+button {
+  display: block;
+  background-color: #e7e7e7;
+  font-size: 20px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p{font-size: 20px;}
+
+h2{font-size: 25px}
+
+.card {
+  width: 100px;
+  border-radius: 8px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.container{
+  min-width: 850px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inactive {
+  opacity: 0.8;
+  filter: grayscale(100%)
+}
+
+.hidden {display: none;}
+
+.blurred{filter: blur(5px);}
+
+#newGameBtn{font-size: 12px;}
+
+#helpBtn{
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  border-color: #a1a1a1;
+}
+
+#closeHelp {
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+#helpWindow{
+  box-sizing: border-box;
+  z-index: 2;
+  margin: auto;
+  width: 40%;
+  border: 3px solid gray;
+  border-radius: 10px;
+  background-color: #ededed;
+  padding: 25px;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+
+@media only screen and (max-width: 1870px) {
+  button,p {font-size: 28px}
+  h2 {font-size: 40px}
+  #newGameBtn {font-size: 20px}
+  #closeHelp {font-size: 40px}
+  #helpWindow{
+    margin: 0px;
+    width: 70%;
+    padding: 35px;
+    left: 15%;
+    right: 15%;
+    top: 10%;
+  }
+  #maincontainer{flex-flow: column nowrap;}
+}

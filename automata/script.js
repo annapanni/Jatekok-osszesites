@@ -51,7 +51,7 @@ function finalImg(img, parent, duration){
 
 function rollImg(img, parent){
   img.classList.remove("finalImg")
-  const rolls = randint(15, 20)
+  const rolls = randint(15, 18)
   for (let i = 0; i < rolls; i++){
     setTimeout(randomImgSrc, i*i*10, img, parent, Math.abs(i*i - (i-1)*(i-1)) * 10)
   }
@@ -68,8 +68,8 @@ function rollAllImg() {
 
 const automataDiv = document.querySelector(".automata")
 const gombokDiv = document.querySelector(".gombok")
-const startBtn = document.querySelector(".startBtn")
 const balanceP = document.querySelector(".egyenlegP")
+const kar = document.querySelector(".kar")
 
 const aImages = []
 for (let i=0; i<3;i++){
@@ -84,5 +84,9 @@ for (let i=0; i<3;i++){
 }
 const imgDivs = document.querySelectorAll(".img-div")
 
-startBtn.addEventListener("click", rollAllImg)
+kar.addEventListener("click", function () {
+  kar.classList.add("pulled")
+  setTimeout(()=>kar.classList.remove("pulled"), 1500)
+  rollAllImg()
+})
 changeBalance(balance)

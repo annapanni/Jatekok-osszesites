@@ -31,6 +31,16 @@ div{
 .scrolling-out{animation-name: scroll-out}
 .scrolling-in{animation-name: scroll-in}
 
+@keyframes pulling{
+  0% {transform: rotate(20deg);}
+  50% {transform: rotate(160deg);}
+  100% {transform: rotate(20deg);}
+}
+.pulled{
+  animation-name: pulling;
+  animation-duration: 1.5s;
+}
+
 .a-image{
   position:absolute;
   width: 200px;
@@ -42,10 +52,8 @@ div{
   padding: 5px;
 }
 
-.startBtn{
-  border: 2px outset #00C65C;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: inherit;
+.kar{
+  height: 300px;
+  transform: rotate(20deg);
+  transform-origin: center bottom ;
 }

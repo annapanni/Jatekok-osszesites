@@ -87,7 +87,7 @@ function genCharTable(p){
     for (let j = 0; j < 6; j++){
       const cell = document.createElement("td")
       const img = document.createElement("img")
-      setCard(img, i*5+j,"borito.jpg", p)
+      setCard(img, i*6+j,"borito.jpg", p)
       if (p !== activePlayer) img.classList.add("inactive")
       cell.appendChild(img)
       row.appendChild(cell)

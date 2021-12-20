@@ -1,0 +1,16 @@
+{
+  "background_color": "green",
+  "description": "Játékok összesítése",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Játékok",
+  "short_name": "Játékok",
+  "start_url": "index.html"
+}

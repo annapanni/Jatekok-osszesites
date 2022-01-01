@@ -1,6 +1,13 @@
+#maincontainer{
+  width: 100%;
+  flex-wrap: wrap;
+}
 .token{
   width: 24.15px;
   opacity: 0%;
+}
+.clicked{
+  opacity: 100%;
 }
 img.token:hover{
   opacity: 80%;
@@ -11,8 +18,8 @@ img.token:hover{
   align-items: center;
   justify-content: center;
 }
-.maincontainer{
-  position: fixed;
+.tokens-display{
+  position: absolute;
   top:0;
   left:0;
 }
@@ -24,7 +31,7 @@ img.token:hover{
 }
 
 #asztal{
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   height: 900px;
@@ -54,4 +61,33 @@ table img.token{
   margin-top: 30px;
   justify-content:space-between;
   width: 150px;
+}
+
+.kerek-div{
+  height: 900px;
+  justify-content: space-evenly;
+  margin-left: 200px;
+}
+#tu{
+  height: 40px;
+}
+#kerek{
+  width: 600px;
+  transition-timing-function: linear;
+  transform: rotate(5deg);
+  transition: transform 1s;
+}
+
+button{
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: #ff5757;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  margin:0;
+  padding: 15px 20px;
+  background-color: #4b944e;
 }

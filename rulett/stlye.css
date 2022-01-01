@@ -1,0 +1,57 @@
+.token{
+  width: 24.15px;
+  opacity: 0%;
+}
+img.token:hover{
+  opacity: 80%;
+}
+.flexcontainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.maincontainer{
+  position: fixed;
+  top:0;
+  left:0;
+}
+.columncontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#asztal{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 900px;
+}
+.balszel{
+  height: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 18px;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+.tablazat{
+  border-collapse: collapse;
+  margin-left: 5px;
+}
+table img.token{
+  padding-right:6.3px;
+}
+.nullak{
+  margin-top: 40px;
+  margin-bottom: 22px;
+  width: 120px;
+  justify-content:space-between;
+}
+.oszlopok{
+  margin-top: 30px;
+  justify-content:space-between;
+  width: 150px;
+}

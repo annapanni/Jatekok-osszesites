@@ -6,56 +6,63 @@
     <link rel="stylesheet" href="stlye.css">
   </head>
   <body>
-    <div class="flexcontainer" id="maincontainer">
-      <div class="betting-table">
-        <img src="table.jpg" id="asztal">
-        <div class="flexcontainer tokens-display">
-          <div class="baltabla">
-            <div class="flexcontainer balszel-jobb">
-              <div class="balszel columncontainer">
-                <img src="red_token.png" id="eleje" class="token">
-                <img src="red_token.png" id="paros" class="token">
-              </div>
-              <img src="red_token.png" id="elso-harmad" class="token">
+    <div class="betting-table">
+      <img src="table.jpg" id="asztal">
+      <div class="flexcontainer tokens-display">
+        <div class="baltabla">
+          <div class="flexcontainer balszel-jobb">
+            <div class="balszel columncontainer">
+              <img src="red_token.png" id="eleje" class="token">
+              <img src="red_token.png" id="paros" class="token">
             </div>
-            <div class="flexcontainer balszel-jobb">
-              <div class="balszel columncontainer">
-                <img src="red_token.png" id="piros" class="token">
-                <img src="red_token.png" id="fekete" class="token">
-              </div>
-              <img src="red_token.png" id="masodik-harmad" class="token">
-            </div>
-            <div class="flexcontainer balszel-jobb">
-              <div class="balszel columncontainer">
-                <img src="red_token.png" id="paratlan" class="token">
-                <img src="red_token.png" id="vege" class="token">
-              </div>
-              <img src="red_token.png" id="harmadik-harmad" class="token">
-            </div>
+            <img src="red_token.png" id="elso-harmad" class="token">
           </div>
-          <div class="jobbtabla  columncontainer">
-            <div class="nullak flexcontainer">
-              <img src="red_token.png" id="_0" class="token">
-              <img src="red_token.png" id="_-1" class="token">
+          <div class="flexcontainer balszel-jobb">
+            <div class="balszel columncontainer">
+              <img src="red_token.png" id="piros" class="token">
+              <img src="red_token.png" id="fekete" class="token">
             </div>
-            <table class="tablazat">
-              <!-- javascript tölti ki -->
-            </table>
-            <div class="oszlopok flexcontainer">
-              <img src="red_token.png" id="elso-oszlop" class="token">
-              <img src="red_token.png" id="masodik-oszlop" class="token">
-              <img src="red_token.png" id="harmadik-oszlop" class="token">
+            <img src="red_token.png" id="masodik-harmad" class="token">
+          </div>
+          <div class="flexcontainer balszel-jobb">
+            <div class="balszel columncontainer">
+              <img src="red_token.png" id="paratlan" class="token">
+              <img src="red_token.png" id="vege" class="token">
             </div>
+            <img src="red_token.png" id="harmadik-harmad" class="token">
+          </div>
+        </div>
+        <div class="jobbtabla  columncontainer">
+          <div class="nullak flexcontainer">
+            <img src="red_token.png" id="_0" class="token">
+            <img src="red_token.png" id="_-1" class="token">
+          </div>
+          <table class="tablazat">
+            <!-- javascript tölti ki -->
+          </table>
+          <div class="oszlopok flexcontainer">
+            <img src="red_token.png" id="elso-oszlop" class="token">
+            <img src="red_token.png" id="masodik-oszlop" class="token">
+            <img src="red_token.png" id="harmadik-oszlop" class="token">
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="flexcontainer" id="maincontainer">
       <div class="kerek-div columncontainer">
         <div class="columncontainer">
           <img src="tu.png" alt="" id="tu">
           <img src="wheel.png" alt="" id="kerek">
         </div>
         <button type="button" name="button">Mehet!</button>
+        <p id="display-p">Nyereség: - <br> Veszteség: - <br> Összesen: -</p>
+      </div>
+
+      <div class="colour-token-div columncontainer">
+        <img src="red_token.png" id="redToken" class="colour-token" alt="">
+        <img src="blue_token.png" id="blueToken" class="colour-token" alt="">
+        <img src="green_token.png" id="green Token" class="colour-token" alt="">
+        <img src="black_token.png" id="blackToken" class="colour-token" alt="">
       </div>
     </div>
 

@@ -87,6 +87,7 @@ const specFogadasok = {
 
 const wheel = document.getElementById("kerek")
 const btn = document.querySelector("button")
+const display = document.getElementById("display-p")
 const tokens = document.querySelectorAll(".token")
 let rotation = 5
 let prevWinnerIndex = 0
@@ -99,7 +100,7 @@ tokens.forEach((t, i) => {t.addEventListener("click", function (e) {
   })});
 
 function evalSpin(winnerNumber){
-  const payback = []
+  const payback = [0]
   for (let bet of selected){
     const betNums = bet.split("_").filter(x=>x).map(x=>Number(x))
     //táblán kívüli fogadások
@@ -111,8 +112,12 @@ function evalSpin(winnerNumber){
     }else{
       payback.push(-price)
     }
-    console.log(bet,payback);
   }
+  display.innerHTML =
+  `Nyereség: ${payback.filter(x=>x>=0).reduce((a, x)=>a+x)} Ft <br>
+  Veszteség: ${-payback.filter(x=>x<=0).reduce((a, x)=>a+x)} Ft <br>
+  Összesen: ${payback.reduce((a, x)=>a+x)} Ft`
+  console.log(payback);
 }
 
 function spin(){

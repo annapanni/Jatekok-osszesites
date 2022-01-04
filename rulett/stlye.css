@@ -1,4 +1,5 @@
 body{
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   background-color: #1c4421;
   width: 100%;
@@ -62,6 +63,7 @@ img.token:hover{
 }
 table img.token{
   padding-right:6.3px;
+  padding-top: 0.6px;
 }
 .nullak{
   margin-top: 40px;
@@ -107,7 +109,19 @@ button:hover{
   color: lightgreen;
   text-align: center;
 }
+div.big-token{
+  position: relative;
+}
 .colour-token{
   width: 150px;
   margin: 20px;
+}
+.token-label{
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }

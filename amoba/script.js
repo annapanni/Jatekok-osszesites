@@ -3,8 +3,8 @@
 const n=10
 const toWin = 5
 let filler = "x"
-const playerX = prompt("X játékos neve:")
-const playerO = prompt("O játékos neve:")
+let playerX = "Játékos 1"
+let playerO = "Játékos 2"
 
 let posX = []
 let posO = []
@@ -30,9 +30,14 @@ function clear(){
 function wins (a){
   alert(`${a} nyert egy pontot !`)
   clear()
-  if (a === playerX) xP += 1
-  else oP += 1
-  points.innerHTML = `${playerX}: ${xP} <br>${playerO}: ${oP}`
+  if (a === playerX) {
+    xP += 1
+    document.getElementById("p1-point").textContent = `: ${xP}`
+  }
+  else {
+    oP += 1
+    document.getElementById("p2-point").textContent = `: ${oP}`
+  }
 }
 
 //puts an x or an o into the grid
@@ -104,9 +109,24 @@ const newGameBtn = document.createElement("button")
 newGameBtn.innerHTML = "Új játék"
 newGameBtn.addEventListener("click", clear)
 
-const points = document.createElement("p")
-points.innerHTML = `${playerX}: 0 <br>${playerO}: 0`
+const pointsDisplay = document.createElement("div")
+pointsDisplay.innerHTML = `
+  <div>
+  <textarea id="p1-name" class="centered" rows="1" cols="15">${playerX}</textarea>
+  <p class="point-count" id="p1-point">: 0</p>
+  </div>
+  <div>
+  <textarea id="p2-name" class="centered" rows="1" cols="15">${playerO}</textarea>
+  <p class="point-count" id="p2-point">: 0</p>
+  </div>`
 
 document.body.appendChild(tabl)
-document.body.appendChild(points)
+document.body.appendChild(pointsDisplay)
 document.body.appendChild(newGameBtn)
+
+document.getElementById("p1-name").addEventListener("keyup", function(e){
+    playerX = e.target.value
+  })
+document.getElementById("p2-name").addEventListener("onkeyup", function(e){
+    playerO = e.target.value
+  })
